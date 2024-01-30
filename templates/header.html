@@ -1,0 +1,24 @@
+<!-- ======= Header ======= -->
+{% load static %}
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="{% static 'img/logo2.svg' %}" alt="" width="100%"; height="100%">
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
+
+    </div>
+  </header><!-- End Header -->
