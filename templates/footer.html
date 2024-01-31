@@ -19,20 +19,20 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Services</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About us</a></li>
+            <li><a href="{% url 'portfolio' %}">Services</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="services-details.html">Service 1</a></li>
-            <li><a href="services-details2.html">Service 2</a></li>
-            <li><a href="services-details3.html">Service 3</a></li>
-            <li><a href="services-details4.html">Service 4</a></li>
+            <li><a href="{% url 'service-details1' %}">Service 1</a></li>
+            <li><a href="{% url 'service-details2' %}">Service 2</a></li>
+            <li><a href="{% url 'service-details3' %}">Service 3</a></li>
+            <li><a href="{% url 'service-details4' %}">Service 4</a></li>
           </ul>
         </div>
 
